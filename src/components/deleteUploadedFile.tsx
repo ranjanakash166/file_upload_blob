@@ -10,7 +10,7 @@ export default function DeleteUploadedFile({url}:{url:string}) {
     const handleClick = async () => {
         setIsLoading(true);
         try{
-            await fetch("api/file"+
+            await fetch("api/file/"+
              encodeURIComponent(url)
             ,{
                 method:"DELETE",
